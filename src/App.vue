@@ -1,10 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Calculator from './components/Calculator.vue'
+
+
 </script>
 
+<script>
+export default {
+  name: 'App',
+  components: {
+    Calculator
+  }
+}
+</script>
+
+
+
+
+
 <template>
-  <div>
-   
+  <div id="app">
+   <calculator>
+
+   </calculator>
   </div>
   
 </template>
