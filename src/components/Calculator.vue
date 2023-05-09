@@ -3,6 +3,7 @@ import { ref } from 'vue'
 
 defineProps({
   msg: String,
+  name: 'Calculator',
 })
 
 const count = ref(0)
@@ -21,9 +22,15 @@ export default{
 
 
 <template>
-  <h1>{{ msg }}</h1>
+ <h1>{{ msg }}</h1>
+  <div class="calcualator p-3 max-w-md m-12 mx-auto bg-cyan-700">
+    <!-- calculator result -->
+    <div class="result w-full rounded m-1 p-3 text-right leading-3 font-bold text-white">
+     0
+    </div>
+    
+  </div>
 
-  Hello World
 </template>
 
 <style scoped>
